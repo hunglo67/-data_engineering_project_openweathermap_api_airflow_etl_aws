@@ -1,0 +1,74 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-c6905845-08db-4a5d-a821-0d9fe10116d6
+Extension host agent listening on /tmp/code-c6905845-08db-4a5d-a821-0d9fe10116d6
+
+[05:41:58] 
+
+
+
+
+[05:41:58] Extension host agent started.
+[05:41:58] [<unknown>][29f40dc0][ManagementConnection] New connection established.
+[05:41:58] [<unknown>][1086f3c0][ExtensionHostConnection] New connection established.
+[05:41:58] [<unknown>][1086f3c0][ExtensionHostConnection] <1523> Launched Extension Host Process.
+[05:42:09] [<unknown>][29f40dc0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[05:42:11] [<unknown>][6289de10][ManagementConnection] New connection established.
+[05:42:11] [<unknown>][78244c40][ExtensionHostConnection] New connection established.
+[05:42:11] [<unknown>][78244c40][ExtensionHostConnection] <1598> Launched Extension Host Process.
+[05:42:22] Getting Manifest... mechatroner.rainbow-csv
+[05:42:23] Installing extension: mechatroner.rainbow-csv {
+  isMachineScoped: false,
+  installOnlyNewlyAddedFromExtensionPack: true,
+  isApplicationScoped: false,
+  profileLocation: v {
+    scheme: 'file',
+    authority: '',
+    path: '/home/ubuntu/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/ubuntu/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/ubuntu/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.92.2', date: '2024-08-14T17:29:30.058Z' }
+}
+[05:42:24] Getting Manifest... mechatroner.rainbow-csv
+[05:42:24] Extension is already requested to install mechatroner.rainbow-csv file:///home/ubuntu/.vscode-server/extensions/extensions.json
+[05:42:41] Extension signature verification result for mechatroner.rainbow-csv: Success. Executed: true. Duration: 14077ms.
+[05:42:42] Extracted extension to file:///home/ubuntu/.vscode-server/extensions/mechatroner.rainbow-csv-3.12.0: mechatroner.rainbow-csv
+[05:42:42] Renamed to /home/ubuntu/.vscode-server/extensions/mechatroner.rainbow-csv-3.12.0
+[05:42:43] Extension installed successfully: mechatroner.rainbow-csv file:///home/ubuntu/.vscode-server/extensions/extensions.json
+[05:42:47] Downloaded extension to file:///home/ubuntu/.vscode-server/data/CachedExtensionVSIXs/dfb48bd5-bff6-4e30-9497-eb194b8a2ffb
+[05:42:47] Installing extension: mechatroner.rainbow-csv {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  donotIncludePackAndDependencies: true,
+  keepExisting: true,
+  installOnlyNewlyAddedFromExtensionPack: false,
+  isApplicationScoped: false,
+  profileLocation: v {
+    scheme: 'file',
+    authority: '',
+    path: '/home/ubuntu/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/ubuntu/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/ubuntu/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.92.2', date: '2024-08-14T17:29:30.058Z' }
+}
+[05:42:47] Installing the extension without checking dependencies and pack mechatroner.rainbow-csv
+[05:42:47] Deleted existing extension from disk mechatroner.rainbow-csv /home/ubuntu/.vscode-server/extensions/mechatroner.rainbow-csv-3.12.0
+[05:42:48] Extracted extension to file:///home/ubuntu/.vscode-server/extensions/mechatroner.rainbow-csv-3.12.0: mechatroner.rainbow-csv
+[05:42:48] Renamed to /home/ubuntu/.vscode-server/extensions/mechatroner.rainbow-csv-3.12.0
+[05:42:48] Extension installed successfully: mechatroner.rainbow-csv file:///home/ubuntu/.vscode-server/extensions/extensions.json
+New EH opened, aborting shutdown
+[05:46:58] New EH opened, aborting shutdown
+[05:47:15] [<unknown>][1086f3c0][ExtensionHostConnection] <1523> Extension Host Process exited with code: 0, signal: null.
+[06:15:42] [<unknown>][6289de10][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

@@ -1,0 +1,45 @@
+2024-09-04 07:14:48.689 [info] [main] Log level: Info
+2024-09-04 07:14:48.689 [info] [main] Validating found git in: "git"
+2024-09-04 07:14:48.689 [info] [main] Using git "2.43.0" from "git"
+2024-09-04 07:14:48.689 [info] [Model][doInitialScan] Initial repository scan started
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [15ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [3ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [3ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [4ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.689 [info] > git rev-parse --show-toplevel [8ms]
+2024-09-04 07:14:48.689 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.690 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 07:14:48.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.697 [info] > git rev-parse --show-toplevel [2ms]
+2024-09-04 07:14:48.697 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 07:14:48.711 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-09-04 07:20:45.570 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 07:20:45.574 [info] > git rev-parse --git-dir --git-common-dir [0ms]
+2024-09-04 07:20:45.584 [info] [Model][openRepository] Opened repository: /home/ubuntu
+2024-09-04 07:20:45.591 [info] [Git][getRemotes] No remotes found in the git config file
+2024-09-04 07:20:45.592 [info] > git config --get commit.template [5ms]
+2024-09-04 07:20:45.593 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-04 07:20:45.594 [warning] [Git][getBranch] No such branch: master
+2024-09-04 07:20:45.805 [info] > git status -z -uall [209ms] (cancelled)
+2024-09-04 07:20:46.274 [info] > git check-ignore -v -z --stdin [2ms]
+2024-09-04 07:20:46.343 [info] > git show --textconv :airflow/dags/weather_dag.py [4ms]
+2024-09-04 07:20:46.343 [info] > git ls-files --stage -- /home/ubuntu/airflow/dags/weather_dag.py [1ms]
+2024-09-04 07:20:49.883 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [945ms]
+2024-09-04 07:20:49.883 [warning] [Git][getBranch] No such branch: master
+2024-09-04 07:20:49.900 [info] > git config --get commit.template [18ms]
+2024-09-04 07:20:49.916 [info] [Git][getRemotes] No remotes found in the git config file
+2024-09-04 07:20:49.925 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-09-04 07:20:49.925 [warning] [Git][getBranch] No such branch: master
+2024-09-04 07:20:50.207 [info] > git status -z -uall [271ms] (cancelled)
+2024-09-04 07:20:50.207 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [70ms]
+2024-09-04 07:20:50.207 [warning] [Git][getBranch] No such branch: master
+2024-09-04 07:21:58.204 [info] > git ls-files --stage -- /home/ubuntu/airflow/dags/weather_dag.py [1ms]
+2024-09-04 07:21:58.396 [info] > git show --textconv :airflow/dags/weather_dag.py [2ms]
