@@ -1,0 +1,29 @@
+[2024-09-04T06:00:55.714+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-04T06:00:55.725+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_dag.extract_weather_data manual__2024-09-04T06:00:49.098187+00:00 [queued]>
+[2024-09-04T06:00:55.730+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_dag.extract_weather_data manual__2024-09-04T06:00:49.098187+00:00 [queued]>
+[2024-09-04T06:00:55.730+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2024-09-04T06:00:55.747+0000] {taskinstance.py:2879} INFO - Executing <Task(SimpleHttpOperator): extract_weather_data> on 2024-09-04 06:00:49.098187+00:00
+[2024-09-04T06:00:55.750+0000] {standard_task_runner.py:72} INFO - Started process 3285 to run task
+[2024-09-04T06:00:55.756+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'weather_dag', 'extract_weather_data', 'manual__2024-09-04T06:00:49.098187+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/weather_dag.py', '--cfg-path', '/tmp/tmpavfn8y6k']
+[2024-09-04T06:00:55.757+0000] {standard_task_runner.py:105} INFO - Job 28: Subtask extract_weather_data
+[2024-09-04T06:00:55.794+0000] {task_command.py:467} INFO - Running <TaskInstance: weather_dag.extract_weather_data manual__2024-09-04T06:00:49.098187+00:00 [running]> on host ip-172-31-40-195.ap-southeast-2.compute.internal
+[2024-09-04T06:00:55.991+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='myemail@domain.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_dag' AIRFLOW_CTX_TASK_ID='extract_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-04T06:00:49.098187+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-04T06:00:49.098187+00:00'
+[2024-09-04T06:00:55.993+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-04T06:00:55.993+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-04T06:00:55.993+0000] {logging_mixin.py:190} INFO - Current task name:extract_weather_data state:running start_date:2024-09-04 06:00:55.725870+00:00
+[2024-09-04T06:00:55.993+0000] {logging_mixin.py:190} INFO - Dag name:weather_dag and current dag run status:running
+[2024-09-04T06:00:55.994+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-04T06:00:55.994+0000] {http.py:173} INFO - Calling HTTP method
+[2024-09-04T06:00:55.997+0000] {base.py:84} INFO - Retrieving connection 'weathermap_api'
+[2024-09-04T06:00:56.000+0000] {base.py:84} INFO - Retrieving connection 'weathermap_api'
+[2024-09-04T06:00:56.291+0000] {http.py:222} INFO - {"coord":{"lon":-122.6762,"lat":45.5234},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"base":"stations","main":{"temp":290.55,"feels_like":290.57,"temp_min":288.32,"temp_max":291.93,"pressure":1019,"humidity":85,"sea_level":1019,"grnd_level":1018},"visibility":10000,"wind":{"speed":2.68,"deg":336,"gust":4.92},"clouds":{"all":55},"dt":1725429652,"sys":{"type":2,"id":2008548,"country":"US","sunrise":1725370524,"sunset":1725417885},"timezone":-25200,"id":5746545,"name":"Portland","cod":200}
+[2024-09-04T06:00:56.307+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-04T06:00:56.307+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=weather_dag, task_id=extract_weather_data, run_id=manual__2024-09-04T06:00:49.098187+00:00, execution_date=20240904T060049, start_date=20240904T060055, end_date=20240904T060056
+[2024-09-04T06:00:56.320+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-04T06:00:56.321+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-04T06:00:56.321+0000] {logging_mixin.py:190} INFO - Dag name:weather_dag queued_at:2024-09-04 06:00:49.109467+00:00
+[2024-09-04T06:00:56.321+0000] {logging_mixin.py:190} INFO - Task hostname:ip-172-31-40-195.ap-southeast-2.compute.internal operator:SimpleHttpOperator
+[2024-09-04T06:00:56.331+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-04T06:00:56.339+0000] {logging_mixin.py:190} WARNING - /home/ubuntu/airflow_venv/lib/python3.12/site-packages/airflow/models/baseoperator.py:1378 AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+[2024-09-04T06:00:56.350+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-04T06:00:56.356+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
