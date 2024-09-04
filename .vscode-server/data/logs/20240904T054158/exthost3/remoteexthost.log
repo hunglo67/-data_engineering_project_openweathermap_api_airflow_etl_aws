@@ -30,3 +30,13 @@
 	at async T.getBranchBase (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:1020363)
 	at async t.GitHistoryProvider.resolveHEADMergeBase (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:948043)
 	at async t.GitHistoryProvider.onDidRunGitStatus (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:941421)
+2024-09-04 07:22:54.035 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2024-09-04 07:22:55.874 [error] Error: No such branch: master.
+	at N.getBranch (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:936645)
+	at async T.retryRun (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:1032124)
+	at async T.run (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:1031728)
+	at async T.getBranch (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:1020077)
+	at async T.getBranchBase (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:1020363)
+	at async t.GitHistoryProvider.resolveHEADMergeBase (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:948043)
+	at async t.GitHistoryProvider.onDidRunGitStatus (/home/ubuntu/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/main.js:2:941421)
+2024-09-04 07:24:11.808 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
